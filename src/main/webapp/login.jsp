@@ -15,8 +15,8 @@
 	}
 	#login-box {
 		/*border:1px solid #F00;*/
-		padding: 35px;
-		border-radius:15px;
+		padding: 15px;
+		border-radius:10px;
 		background: #56666B;
 		color: #fff;
 	}
@@ -30,13 +30,13 @@
 			<div class="col-md-4" id="login-box">
 				<form class="form-horizontal" role="form" action="/login" id="from1" method="post">
 				  <div class="form-group">
-				    <label for="firstname" class="col-sm-3 control-label">用户id</label>
+				    <label for="userID" class="col-sm-3 control-label">用户id</label>
 				    <div class="col-sm-9">
 				      <input type="text" class="form-control" id="userID" placeholder="请输入名字" name="username">
 				    </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="lastname" class="col-sm-3 control-label">密码</label>
+				    <label for="password" class="col-sm-3 control-label">密码</label>
 				    <div class="col-sm-9">
 				      <input type="password" class="form-control" id="password" placeholder="请输入密码" name="password">
 				    </div>

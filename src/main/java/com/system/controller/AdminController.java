@@ -3,8 +3,6 @@ package com.system.controller;
 import com.system.exception.CustomException;
 import com.system.po.*;
 import com.system.service.*;
-import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -360,7 +358,7 @@ public class AdminController {
     private String selectCourse(String findByName, Model model) throws Exception {
 
         List<CourseCustom> list = courseService.findByName(findByName);
-
+        System.out.println(list);
         model.addAttribute("courseList", list);
         return "admin/showCourse";
     }
